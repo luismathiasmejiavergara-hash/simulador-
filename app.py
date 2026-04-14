@@ -252,7 +252,7 @@ def main() -> None:
     st.sidebar.header("Parametros de entrada")
     current_a = st.sidebar.slider("Corriente (A)", min_value=1.0, max_value=15.0, value=8.0, step=0.5)
     length_m = st.sidebar.slider("Longitud del cable (m)", min_value=5.0, max_value=120.0, value=45.0, step=1.0)
-    area_mm2 = st.sidebar.slider("Area del cable (mm2)", min_value=1.0, max_value=12.0, value=4.0, step=0.5)
+    area_mm2 = st.sidebar.slider("Area del cable (mm2)", min_value=1.0, max_value=50.0, value=4.0, step=0.5)
     conductor = st.sidebar.selectbox("Tipo de conductor", options=list(CONDUCTORS.keys()))
     supply_voltage_v = st.sidebar.slider("Voltaje de alimentacion (V)", min_value=110, max_value=220, value=127, step=1)
 
